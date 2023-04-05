@@ -4,11 +4,20 @@ const commands = require("./commands/index.js");
 
 function print(output) {
   process.stdout.write(output);
-  process.stdout.write("\nprompt >");
+  process.stdout.write("\nprompt > ");
 }
 
 function bash() {
-  print("");
+  process.stdout.write("prompt > ");
+
+  process.stdin.on("data", (data) => {
+    const input = data.toString().split(" ");
+    const cmd = input.shift().trim();
+    const args = input.join(" ").trim();
+
+    if (!commands[cmd]) print("command not found: " + cmd);
+    else commands[cmd](print, args);
+  });
 }
 
 bash();
