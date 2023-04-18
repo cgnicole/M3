@@ -2,6 +2,15 @@
 
 nose js sirve para levntar un servidor 
 
+APP - CLIENTE
+* HACE UNA PETICION (REQUEST) AL SERVER
+
+SERVER
+* EL SERVIDOR DEVUELVE UNA RESUETA A ESTA PETICION
+
+las comunicacion de peticon y repuesta estan dadas bajo el protocolo HTTP, ese protocolo utiliza metodos GET - PUT - POST - DELATE
+
+(obtener, modificar, crear, eliminar) informacion 
 
 // node js: solo interpreta javasecript y es un contexto de ejecucion que permite leer javascript fuera de un navegador. este programa esta escrito en C++
 
