@@ -96,3 +96,4 @@ pasos para crear package.json
 - **Nodemon**
     
     Este es un paquete que podemos descargar desde **npm** con ***npm install nodemon***. Lo que nos permitirá este paquete es poder mantener la terminal en modo *watcher*. De esta forma, cuando realicemos cambios dentro de nuestro proyecto podremos verlos reflejados sin tener que reiniciar el programa.
+    

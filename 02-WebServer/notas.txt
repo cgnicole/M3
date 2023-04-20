@@ -1,0 +1,32 @@
+WEB SERVER
+
+* Creacion de primer servidor funciona
+* Definir que es una APIRest
+* Identificar rutas dentro de un servidor  
+
+ ----------servidor web----------
+
+ cualquier computadora o sitema que procesa solicitudes y que devuelva una respuesta 
+
+proeveer servicios a un clinete que lo solicitie 
+
+
+CLIENT 
+
+- el cliente pedira por un servicio.
+ej: el cliente quiere registrarse en una pagina web 
+
+⬇️
+
+Hace la request al SERVER
+
+
+SERVER  
+
+- el servidor que opera el servico y que devolvera una respuesta.
+
+ej: guarda la infromacion del cliente en una BD y devuelve un permiso de login
+
+
+client y server son dos mundos totalmente diferente. lo unico que hace que estos dos mundos hace que se unan es una request con el protocolo http (el front y el back solo se conectan con eso)
+
