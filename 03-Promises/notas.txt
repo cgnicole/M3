@@ -1,0 +1,49 @@
+Promises: las promesas son una funcionalidad a gregada por ECMAscript que nos ayuda a lidear con los procesos asincronicos 
+
+
+sincronico: Esto es como cuando una persona que tiene que realizar dos tareas. No puede hacer las dos al mismo tiempo, pero si puede empezar una, seguir con otra hasta terminarla, y volver a la primera.
+
+asincronico: los procesos que son asincrónicos van a ser dos procesos que se ejecutarán al mismo tiempo. El procesoA va a ejecutarse, y cuando necesite información que le provee el procesoB, no se va a quedar esperando la información. En su lugar va a seguir ejecutándose al mismo tiempo que se ejecuta el procesoB. Una vez que este termina, le enviará esa data al procesoA.
+
+
+¿Qué es una promesa?
+Una promesa es el eventual resultado de una operación asincrónica. Es eventual porque las promesas pueden cumplirse como pueden no cumplirse. Es decir, tendremos dos resultados posibles.
+
+
+Propiedades de las promesas
+
+- Status
+
+Las promesas, en cierto modo son objetos. Estos objetos (promesas) se van a encargar de gestionar y representar una respuesta futura.
+
+
+ en un principio la promesa no tiene ningún valor, pero cuando esta se resuelva, puede estar cumplida o no cumplida.
+
+ LAS PROMESAS PUEDEN TENER 3 TIPOS DE ESTADOS 
+
+ 1. PENDING: Quiere decir que aún está pendiente y no fue resuelta.
+
+ 2. FULFILLED: En este caso la promesa fue resuelta exitosamente.
+
+ 3: REJECTED:En este caso la promesa fue rechazada porque no se cumplió. Pudo no haberse cumplido por muchas razones, por ejemplo, un error, una falla de conexión, etc.
+
+
+
+- Informacion 
+
+la propiedad *información* será el valor con el que se cumplió la promesa, o la razón por la que se rechazó.
+
+VALUE es el resultado de la rspuesta de la promesa. value serán los datos que hemos solicitado cuando la promesa fue completada exitosamente.
+
+REASON sera la razón por la que la promesa no se pudo cumplir (es decir, el error).
+
+- **.then()**
+    
+    De la misma manera que existen métodos para los *arrays* (map, concat, push, etc.) existe un método para las promesas. Ese método es **.then()**. Lo que nos va a permitir es poder acceder a la propiedad *información* de una promesa y poder hacer algo con su valor o su rechazo.
+
+    - **.catch()**
+    
+    Al igual que existe un método llamado **then,** hay otro llamado **catch**. Este método sirve para manejar automáticamente un error. Es equivalente a lo siguiente:
+
+
+    .catch()  ===  .then(null, errorHandler)
