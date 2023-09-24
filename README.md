@@ -30,7 +30,8 @@
 ```bash
   git add .
   git commit -m "el mensaje que ustedes quieran"
-  git push
+  git push orgin main
+
 ```
 
 > El **Checkpoint** consiste en un ejercicio que integra todo este contenido, va a ser individual y van a tener un día completo para terminarlo. Para continuar con la carrera es necesario aprobar este Checkpoint.
